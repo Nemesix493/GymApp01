@@ -1,0 +1,3 @@
+title=<GymApp>
+author=<Nemesis>
+orientation=<portrait>

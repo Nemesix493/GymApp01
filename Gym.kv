@@ -1,0 +1,38 @@
+<MainContent>:
+    orientation: "vertical"
+
+<TopBar>:
+    orientation: "horizontal"
+    size_hint: 1, None
+    height: "60dp"
+
+<Content>:
+    size_hint: 1, 1
+    anchor_x: "left"
+
+<SideBarButton>:
+    size_hint: None, 1
+    width: "60dp"
+    text: "SideBar"
+    on_state: self.on_state_change()
+
+<SideBarInnerButton>:
+    size_hint: 1, None
+    height: "60dp"
+    on_press: self.on_click_button()
+
+<SideBarScrollView>:
+    size_hint: 0.5 , 1
+
+<SideBarBoxLayout>:
+    orientation: "vertical"
+    size_hint: 1, None
+    height: self.minimum_height
+
+<ScreenCache>:
+    canvas:
+        Color:
+            rgba: .9, .9, .9, .5
+        Rectangle:
+            pos: self.pos
+            size: self.size
